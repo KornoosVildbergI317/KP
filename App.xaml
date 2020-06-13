@@ -1,0 +1,9 @@
+﻿<Application x:Class="ZooMail.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ZooMail"
+             StartupUri="LaunchScreenWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

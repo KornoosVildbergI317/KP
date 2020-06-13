@@ -1,0 +1,94 @@
+﻿<Window x:Class="ZooMail.PersonalAccounting.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZooMail.PersonalAccounting"
+        mc:Ignorable="d"
+          Title="Регистрация" Height="500" Width="800" Icon="../icon.ico">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Kornoos Vildberg\source\repos\ZooMail\ZooMail\img\Zoo2.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <TextBox HorizontalAlignment="Left" Height="37" Text ="" Margin="89,97,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="310" x:Name="txtBoxMiddle_Name" FontSize="18">
+            <TextBox.ToolTip>
+                Введите Отчество
+            </TextBox.ToolTip>
+        </TextBox>
+        <Label Content="Отчество" HorizontalAlignment="Left" Height="37" Margin="23,97,0,0" VerticalAlignment="Top" Width="66" FontFamily="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}" Foreground="#FFF1EEEE"/>
+
+        <TextBox HorizontalAlignment="Left" Height="37" Text ="" Margin="89,139,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="310" x:Name="txtBoxEmail_address" FontSize="18">
+            <TextBox.ToolTip>
+                Введите Email Пример: Ryzhikov@mail.ru
+            </TextBox.ToolTip>
+        </TextBox>
+        <Label Content="E-mail " HorizontalAlignment="Left" Height="37" Margin="23,139,0,0" VerticalAlignment="Top" Width="66" FontFamily="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}" Foreground="#FFF1EEEE"/>
+
+        <TextBox HorizontalAlignment="Left" Height="37" Text ="" Margin="89,181,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="310" x:Name="txtBoxPassport_number_and_series" FontSize="18">
+            <TextBox.ToolTip>
+                Введите номер и серию паспорта Пример: 0000 0000
+            </TextBox.ToolTip>
+        </TextBox>
+        <Label Content="Паспорт" HorizontalAlignment="Left" Height="37" Margin="23,181,0,0" VerticalAlignment="Top" Width="66" FontFamily="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}" Foreground="#FFF1EEEE"/>
+
+        <TextBox HorizontalAlignment="Left" Height="37" Text ="" Margin="89,55,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="310" x:Name="txtBoxName" FontSize="18">
+            <TextBox.ToolTip>
+                Введите Имя
+            </TextBox.ToolTip>
+        </TextBox>
+        <Label Content="Имя" HorizontalAlignment="Left" Height="37" Margin="23,55,0,0" VerticalAlignment="Top" Width="66" FontFamily="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}" Foreground="#FFF1EEEE"/>
+
+        <TextBox HorizontalAlignment="Left" Height="37" Text ="" Margin="89,13,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="310" x:Name="txtBoxSurname" FontSize="18">
+            <TextBox.ToolTip>
+                Введите Фамилию
+            </TextBox.ToolTip>
+        </TextBox>
+        <Label Content="Фамилия " HorizontalAlignment="Left" Height="37" Margin="23,13,0,0" VerticalAlignment="Top" Width="66" FontFamily="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}" Foreground="#FFF3F0F0"/>
+
+
+
+
+        <Label Content="Категория" HorizontalAlignment="Left" Height="37" Margin="18,245,0,0" VerticalAlignment="Top" Width="66" Foreground="#FFDCD7D7"/>
+
+
+        <ComboBox HorizontalAlignment="Left" Height="37" Margin="89,245,0,0" VerticalAlignment="Top" Width="305" Name="comboBoxID_Category">
+            <ComboBox.ToolTip>
+                Выберите категорию основных целей покупки
+            </ComboBox.ToolTip>
+        </ComboBox>
+
+
+        <TextBox HorizontalAlignment="Left" Height="37" Text ="" Margin="540,116,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="244" x:Name="txtBoxPassword2" FontSize="18">
+            <TextBox.ToolTip>
+                Нужно повторить пароль
+            </TextBox.ToolTip>
+        </TextBox>
+        <Label Name="labelPass2" Content="Повтор пароля" HorizontalAlignment="Left" Height="37" Margin="423,116,0,0" VerticalAlignment="Top" Width="112" FontFamily="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}" Foreground="#FFF1EEEE"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Text ="" Margin="540,73,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="244" x:Name="txtBoxPassword" FontSize="18">
+            <TextBox.ToolTip>
+                Введите пароль Пример: Ryzhikov1
+            </TextBox.ToolTip>
+        </TextBox>
+        <Label Name="labelPass" Content="Пароль" HorizontalAlignment="Left" Height="37" Margin="423,74,0,0" VerticalAlignment="Top" Width="66" FontFamily="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}" Foreground="#FFF1EEEE"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Text ="" Margin="540,31,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="244" x:Name="txtBoxLogin" FontSize="18">
+            <TextBox.ToolTip>
+                Нужно ввести логин Пример: Ryzhikov@mail.ru
+            </TextBox.ToolTip>
+        </TextBox>
+        <Label Content="Логин" HorizontalAlignment="Left" Height="37" Margin="423,32,0,0" VerticalAlignment="Top" Width="66" FontFamily="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}" Foreground="#FFF1EEEE"/>
+        <Button Name="buttonRegistration" Content="Зарегистрировать" Click="Button_Click_Registration" HorizontalAlignment="Left" Height="79" Margin="455,346,0,0" VerticalAlignment="Top" Width="235">
+            <Button.ToolTip>
+                Нажмите для регистрации
+            </Button.ToolTip>
+        </Button>
+        <Label Content="Статус клиента" HorizontalAlignment="Left" Height="37" Margin="423,181,0,0" VerticalAlignment="Top" Width="112" Name="labelID_status_client" FontFamily="{DynamicResource {x:Static SystemFonts.StatusFontFamilyKey}}" Foreground="#FFF1EEEE"/>
+        <ComboBox HorizontalAlignment="Left" Height="37" Margin="540,181,0,0" VerticalAlignment="Top" Width="199" Name="comboBoxID_status_client">
+            <ComboBox.ToolTip>
+                Выберите статус клиента
+            </ComboBox.ToolTip>
+        </ComboBox>
+        <CheckBox Content="Согласен с Условиями" HorizontalAlignment="Left" Height="17" Margin="455,310,0,0" VerticalAlignment="Top" Width="235" Foreground="#FFFAF9F9" Name="checkBoxAgree"/>
+        <Button Name="buttonConditon" Click="ButtonConditon_Click"  Content="Условия" HorizontalAlignment="Left" Margin="455,283,0,0" VerticalAlignment="Top" Width="227"/>
+
+    </Grid>
+</Window>

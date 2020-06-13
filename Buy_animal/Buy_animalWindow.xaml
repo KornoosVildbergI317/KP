@@ -1,0 +1,60 @@
+﻿<Window x:Class="ZooMail.Buy_animal.Buy_animalWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZooMail.Buy_animal"
+        mc:Ignorable="d"
+       Title="Покупка животного" Height="450" Width="800" Icon="../icon.ico"
+        Activated="Window_Activated"
+        >
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Kornoos Vildberg\source\repos\ZooMail\ZooMail\img\Zoo2.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <DataGrid  SelectionMode="Single" Name="dataGridAnimal" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="300" Margin="535,29,0,0" VerticalAlignment="Top" Width="202">
+            <DataGrid.ItemContainerStyle>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="Selected" Handler="DataGridAnimal_Selected"/>
+                </Style>
+            </DataGrid.ItemContainerStyle>
+        </DataGrid>
+        <Button Click="ButtonReserv_Click" Name="buttonReserv" Content="Покупка" HorizontalAlignment="Left" Margin="535,362,0,0" VerticalAlignment="Top" Width="202" Height="29"/>
+        <TextBox Name="txtCategory" HorizontalAlignment="Left" Height="23" Margin="212,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120">
+            <TextBox.ToolTip>
+                Выберите животное из парка
+            </TextBox.ToolTip>
+        </TextBox>
+        <TextBox x:Name="txtNumber" HorizontalAlignment="Left" Height="23" Margin="212,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120">
+            <TextBox.ToolTip>
+                Выберите животное из парка
+            </TextBox.ToolTip>
+        </TextBox>
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Height="23" Margin="212,191,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120">
+            <TextBox.ToolTip>
+                Выберите животное из парка
+            </TextBox.ToolTip>
+        </TextBox>
+        <TextBox x:Name="txtTitle" HorizontalAlignment="Left" Height="23" Margin="212,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120">
+            <TextBox.ToolTip>
+                Выберите животное из парка
+            </TextBox.ToolTip>
+        </TextBox>
+        <DatePicker Name="dataPickerStart" HorizontalAlignment="Left" Margin="65,329,0,0" VerticalAlignment="Top">
+            <DatePicker.ToolTip>
+                Выберите дату покупку животного
+            </DatePicker.ToolTip>
+        </DatePicker>
+        <DatePicker Name="dataPickerEnd" HorizontalAlignment="Left" Margin="253,329,0,0" VerticalAlignment="Top">
+            <DatePicker.ToolTip>
+                Выберите дату доставки
+            </DatePicker.ToolTip>
+        </DatePicker>
+        <Label Content="Покупка:" HorizontalAlignment="Left" Margin="81,297,0,0" VerticalAlignment="Top"/>
+        <Label Content="Доставка:" HorizontalAlignment="Left" Margin="269,297,0,0" VerticalAlignment="Top"/>
+        <Label Content="Животное" HorizontalAlignment="Left" Margin="136,51,0,0" VerticalAlignment="Top"/>
+        <Label Content="Категория" HorizontalAlignment="Left" Margin="136,111,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер позиции" HorizontalAlignment="Left" Margin="114,142,0,0" VerticalAlignment="Top"/>
+        <Label Content="Статус" HorizontalAlignment="Left" Margin="157,188,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

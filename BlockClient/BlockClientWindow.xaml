@@ -1,0 +1,19 @@
+﻿<Window x:Class="ZooMail.BlockClient.BlockClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZooMail.BlockClient"
+        mc:Ignorable="d"
+        Title="Блокировка клиента" Height="450" Width="800" Icon="../icon.ico"
+        Activated="Window_Activated">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Kornoos Vildberg\source\repos\ZooMail\ZooMail\img\Zoo1.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Button Name="buttonClose" Click="ButtonClose_Click" Content="Закрыть" HorizontalAlignment="Left" Height="46" Margin="651,345,0,0" VerticalAlignment="Top" Width="116"/>
+        <Button x:Name="buttonBlock"  Click="ButtonBlock_Click" Content="Заблокировать" HorizontalAlignment="Left" Height="46" Margin="651,185,0,0" VerticalAlignment="Top" Width="116"/>
+        <DataGrid SelectionMode="Single" Name="dataGridClients" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="362" Margin="47,29,0,0" VerticalAlignment="Top" Width="548"/>
+        <Button x:Name="buttonUnBlock"  Click="ButtonUnBlock_Click" Content="Разблокировать" HorizontalAlignment="Left" Height="46" Margin="651,257,0,0" VerticalAlignment="Top" Width="116"/>
+    </Grid>
+</Window>

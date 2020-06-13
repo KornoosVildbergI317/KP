@@ -1,0 +1,28 @@
+﻿<Window x:Class="ZooMail.AnimalAccounting.AnimalAccountingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZooMail.AnimalAccounting"
+        mc:Ignorable="d"
+       Title="Учет животных" Height="464.917" Width="800" Icon="../icon.ico"
+        Activated="Window_Activated">
+    <Grid Margin="0,0,-0.4,-6">
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Kornoos Vildberg\source\repos\ZooMail\ZooMail\img\zoo1.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <DataGrid SelectionMode="Single" Name="dataGridCars" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="362" Margin="47,29,0,0" VerticalAlignment="Top" Width="548"/>
+        <Button Name="buttonEdit" Click="ButtonEdit_Click"  Content="Изменить" HorizontalAlignment="Left" Height="46" Margin="651,84,0,0" VerticalAlignment="Top" Width="116"/>
+        <Button Name="buttonAdd"  Click="ButtonAdd_Click" Content="Добавить" HorizontalAlignment="Left" Height="46" Margin="651,151,0,0" VerticalAlignment="Top" Width="116"/>
+        <Button Name="buttonClose" Click="ButtonClose_Click" Content="Закрыть" HorizontalAlignment="Left" Height="46" Margin="651,345,0,0" VerticalAlignment="Top" Width="116"/>
+        <ComboBox  x:Name="comboBoxExport" SelectionChanged="ComboBoxExport_SelectionChanged" HorizontalAlignment="Left" Margin="204,396,0,0" VerticalAlignment="Top" Width="120" >
+            <ComboBoxItem Content=".docx" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content=".xlsx" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content=".pdf" HorizontalAlignment="Left"/>
+        </ComboBox>
+        <Button x:Name="buttonExport"  Click="ButtonExport_Click" Content="Экспорт" HorizontalAlignment="Left" Height="22" Margin="47,396,0,0" VerticalAlignment="Top" Width="116"/>
+
+
+
+    </Grid>
+</Window>

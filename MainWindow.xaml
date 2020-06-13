@@ -1,0 +1,21 @@
+﻿<Window x:Class="ZooMail.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZooMail"
+        mc:Ignorable="d"
+        Title="Главное меню" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Kornoos Vildberg\source\repos\ZooMail\ZooMail\img\Zoo1.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <Button Content="Вход" HorizontalAlignment="Left" Height="44" Margin="654,10,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click"/>
+        <Button Content="Условия использования" HorizontalAlignment="Left" Height="44" Margin="10,366,0,0" VerticalAlignment="Top" Width="186" Click="Button_Click_2"/>
+        <Button Content="Помощь" HorizontalAlignment="Left" Height="44" Margin="201,366,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click_3"/>
+        <Button Content="Справочник пород животных" HorizontalAlignment="Left" Height="44" Margin="10,238,0,0" VerticalAlignment="Top" Width="186" Click= "Button_Click_4"/>
+        <Button Content="Справочник Сотрудники" HorizontalAlignment="Left" Height="44" Margin="10,287,0,0" VerticalAlignment="Top" Width="186" Click= "Button_Click_5"/>
+    </Grid>
+
+</Window>

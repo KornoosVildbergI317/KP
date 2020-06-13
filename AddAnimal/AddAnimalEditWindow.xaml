@@ -1,0 +1,33 @@
+﻿<Window x:Class="ZooMail.AddAnimal.AddAnimalEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZooMail.AddAnimal"
+        mc:Ignorable="d"
+       Title="Измение добавления животного" Height="450" Width="600" Icon="../icon.ico">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Kornoos Vildberg\source\repos\ZooMail\ZooMail\img\Zoo3.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Label Name="labelID_Model" Content="ID_Model" HorizontalAlignment="Left" Height="42" Margin="123,76,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBox Name="textBoxTitle" HorizontalAlignment="Left" Height="23" Margin="123,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120">
+            <TextBox.ToolTip>
+                Нужно ввести породу животного
+            </TextBox.ToolTip>
+        </TextBox>
+        <TextBox Name="textBoxReleaseDate" HorizontalAlignment="Left" Height="23" Margin="123,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120">
+            <TextBox.ToolTip>
+                Нужно ввести дату рождения животного
+            </TextBox.ToolTip>
+        </TextBox>
+        <ComboBox Name="comboBoxID_Species" HorizontalAlignment="Left" Margin="123,233,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBox.ToolTip>
+                Выберите породу животного из имеющихся
+            </ComboBox.ToolTip>
+        </ComboBox>
+        <Button Name="buttonOk" Click="ButtonOk_Click" Content="Сохранить" HorizontalAlignment="Left" Height="60" Margin="377,102,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Name="buttonCancel" Click="ButtonCancel_Click"  Content="Отмена" HorizontalAlignment="Left" Height="60" Margin="377,198,0,0" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window>
